@@ -1,0 +1,73 @@
+.navvv {
+  display: flex;
+  align-items: center;
+  column-gap: 140px;
+  justify-content: space-evenly;
+}
+
+nav {
+  font-size: 18px;
+  margin: 12px;
+}
+
+.navlogo {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.navlogo img {
+  width: 24px;
+  height: 24px;
+}
+
+.navlogo span {
+  font-family: "Gilroy-Bold";
+  color: #0065fe;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #141414;
+}
+
+.toplogin {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+.toplogin button {
+  padding: 12px 24px;
+  margin-left: 20px;
+  font-size: 16px;
+  background-color: #0065fe;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.toplogin p, button{
+  cursor: pointer;
+}
+
+.toplogin {
+  transition: transform 100ms ease-out;
+}
+
+.toplogin.clicked:hover {
+  transform: scale(0.96);
+}
+
+#tryForFreeBtn:hover{
+  background-color: #ffffff;
+  color: #0065fe;
+  border: 1px solid #0065FE;
+}

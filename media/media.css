@@ -1,0 +1,70 @@
+@media screen and (max-width: 600px) {
+  .first-frame {
+    padding: 20px; /
+  }
+
+  .first-frame-text p {
+    font-size: 14px; 
+    line-height: 20px; 
+    max-width: 100%; 
+  }
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .price-type {
+    font-size: 2.5rem;
+  }
+
+  .prices {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .price.price-active {
+    scale: 1.2;
+    margin-top: -2rem;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .pricing .section-title-bar {
+    display: block;
+  }
+
+  .pricing-btns {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pricing-btn {
+    width: 15rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .header-bold-underline {
+    display: inline-block;
+    position: absolute;
+    bottom: -80%;
+    left: 50%;
+    transform: translateX(-60%);
+  }
+}
+
+/*form*/
+@media screen and (min-width: 1000px) {
+  .form {
+    background-color: #1e3448;
+    background-image: url('./images/form-left-bg.svg'),
+      url('./images/form-right-bg.svg');
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
