@@ -580,6 +580,9 @@ option {
   text-align: center;
   padding: 109px 317px 53px 317px;
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .get-started h2 {
