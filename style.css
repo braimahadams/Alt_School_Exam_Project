@@ -41,8 +41,8 @@ span {
 
 .intro {
   font-size: 24px;
-  width: 948px;
-  height: 200px;
+  max-width: 948px;
+  min-height: 200px;
   line-height: 96px;
   margin: 106px auto;
   text-align: center;
@@ -169,6 +169,7 @@ span {
 
 .possibilities {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 120px;
   padding: 60px 140px;
   margin-bottom: 128px;
@@ -185,6 +186,7 @@ span {
 .possibilities-2 {
   display: flex;
   column-gap: 72px;
+  flex-wrap: wrap;
 }
 
 .possibilities-2 h3 {
@@ -411,7 +413,9 @@ span {
 .form {
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
   position: relative;
-  padding: 83.5px 482px 84.5px 482px;
+  padding-top: 83.5px;
+  padding-bottom: 83.5px; 
+
 }
 
 .url-input {
@@ -431,6 +435,8 @@ span {
   width: 476px;
   border-radius: 12px;
   padding: 42px 42px;
+  margin: 0 482px 0 482px;
+
 }
 
 .form-box {
@@ -511,7 +517,15 @@ option {
   font-size: 14px;
   font-family: "Gilroy-SemiBold";
   line-height: 12px;
+  transition: transform 100ms ease-out;
 }
+
+.btn-blue:hover{
+  background-color: white;
+  color: #0065fe;
+}
+
+/* Question */
 
 #faqs {
   margin: 43px 324px 155px 324px;
@@ -651,14 +665,14 @@ option {
   row-gap: 56px;
 }
 
-.inner-footer-2 h4 {
+.inner-footer-2 h4,  .company h4 {
   font-size: 16px;
   font-family: "Gilroy-Bold";
   line-height: 24px;
   color: var(--neutral-900, #071827);
 }
 
-.inner-footer-2 li {
+.inner-footer-2 li, .company li {
   color: var(--neutral-800, #112232);
   color: var(--neutral-800, #112232);
   font-size: 16px;
@@ -667,7 +681,7 @@ option {
   cursor:  pointer;
 }
 
-.inner-footer-2 li:hover{
+.inner-footer-2 li:hover,  .company li:hover{
     color: #0065fe;
 }
 

@@ -37,6 +37,10 @@ nav {
   color: #141414;
 }
 
+.navbar ul li a:hover{
+  color: #0065fe;
+}
+
 .toplogin {
   display: flex;
   font-size: 16px;
